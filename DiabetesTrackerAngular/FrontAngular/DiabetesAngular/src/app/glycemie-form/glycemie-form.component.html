@@ -1,0 +1,25 @@
+<!-- Add Glycema Modal -->
+<div id="modalFormGlycemia" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeForm('modalFormGlycemia')">&times;</span>
+    <form [formGroup]="glycemieForm">
+      <div>
+        <label for="date">Date:</label>
+        <input id="date"  formControlName="date"  type="date" required>
+      </div>
+      <div>
+        <label for="time">Heure:</label>
+        <input id="time" formControlName="time" type="time" required>
+      </div>
+      <div>
+        <label for="level">Niveau:</label>
+        <input  id="level" formControlName="level" type="text" required>
+      </div>
+      <div>
+        <label for="name_patient">Nom du patient:</label>
+        <input  id="name_patient" formControlName="name_patient" type="text" required>
+      </div>
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+</div>
